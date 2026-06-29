@@ -35,8 +35,10 @@ seminario-cassandra/
 │   ├── 02_tabelas.cql             <- criação das 3 tabelas desnormalizadas
 │   ├── 03_dados_teste.cql         <- carga de 10 títulos de teste
 │   └── 04_operacoes_crud.cql      <- roteiro de demonstração de CRUD
-└── docs/
-    └── guia-execucao.md           <- passo a passo para rodar tudo (Docker ou Astra DB)
+├── docs/
+│   └── guia-execucao.md           <- passo a passo para rodar tudo (Docker ou Astra DB)
+└── apresentacao/
+    └── Apache-Cassandra-Seminario.pptx   <- slides da apresentação (com notas do apresentador)
 ```
 
 ## Como executar a demonstração
@@ -52,15 +54,6 @@ docker exec -it cassandra-seminario cqlsh -f /cql/02_tabelas.cql
 docker exec -it cassandra-seminario cqlsh -f /cql/03_dados_teste.cql
 docker exec -it cassandra-seminario cqlsh -f /cql/04_operacoes_crud.cql
 ```
-
-## Status do trabalho
-
-- [x] Proposta do seminário (S1)
-- [ ] Pesquisa ampliada (próxima etapa)
-- [x] Modelagem das tabelas
-- [x] Scripts de carga de dados de teste
-- [x] Roteiro de demonstração de CRUD
-- [ ] Gravação/apresentação final
 
 ## Referências
 
